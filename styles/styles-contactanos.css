@@ -1,0 +1,215 @@
+html{height: 100%;}
+body{
+    font-family: "Montserrat";
+    margin: 0;
+    background-color: #223;
+}
+body, div{box-sizing: border-box;}
+
+main {
+    background: linear-gradient(to bottom,rgb(24, 24, 37),#101014);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form {
+    background: transparent;
+    color: #bfc0d1;
+    padding: 20px 0;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 20px #414252;/*fff9*/
+    margin-top: 15px;
+    border-radius: 8px;
+}
+form h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.form-input {padding: 6px 20px;}
+
+input{height: 50px;}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border-bottom: 2px solid #999;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: transparent;
+    color: #bfc0d1;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+input:focus {
+  border-bottom-color: #953;
+  box-shadow: 0 0 2px #47b;
+}
+
+textarea {
+    font-family: sans-serif;
+    min-width: 100%;
+    border: 2px solid #555;
+    border-radius: 8px;
+    resize: none;
+    min-height: 120px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea:focus {
+    border: 1px solid #555;
+    border-bottom-color: #953;
+    box-shadow: 0 0 3px #47b;
+}
+
+button{
+    width: 40px;
+    height: 30px;
+    background-image: url(../img/modo/sol.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*para que se vea cuando se clickee*/
+.enviar{
+    padding: 7px;
+    margin: 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.enviar:hover{
+    background-color: #1c182b;
+    color: #fff;
+    cursor: pointer;
+}
+.enviar:active{
+    background-color: #39209b;
+    color: #fff;
+}
+
+label{font-size: 0.88em;line-height: 2;}
+
+.box{
+    font-family: "Press Start 2P";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.box__image{
+    width: 90px;
+    height: 65px;
+    background-image: url("../img/logos/logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 2px #222; /*#42b*/
+}
+form div h2{
+    font-size: 15px;
+    margin-left: 5px;
+}
+span:first-child{color: #47b;}
+span:last-child{color: #953;}
+
+/* --- footer --- */
+footer{
+    background-color: #1119;
+    color: #fff;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+}
+
+footer div{
+    flex-grow: 1;
+    flex-basis: 1;
+    flex-shrink: 0;
+}
+footer div ul{
+    list-style: none;
+    padding: 0;
+    line-height: 27px;
+    color: #bbb;
+}
+
+footer a{
+    text-decoration: none;
+    color: #45d;
+    transition: color 0.25s ease;
+}
+
+footer a:hover{color: #6c2dc7;}
+footer p{text-align: center;}
+
+/*modo*/
+body.light-mode button{
+    background-color: #222;
+    background-image: url(../img/modo/luna2.png);
+}
+
+body.light-mode main {
+    background: linear-gradient(to bottom,#e4e4e4,#aaa);
+    color: #222;
+}
+body.light-mode label{color: #222;}
+body.light-mode h2{color: #222;}
+body.light-mode .box__image{background-image: url("../img/logos/logo.png");}
+
+body.light-mode input, body.light-mode textarea {
+    border-bottom: 2px solid #444;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: #222;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+body.light-mode input:focus {
+    border-bottom: 3px;
+    border-bottom-color: rgb(165, 75, 29);
+    box-shadow: 0 0 2px rgb(34, 88, 159);
+}
+
+body.light-mode textarea {
+    font-family: sans-serif;
+    min-width: 100%;
+    border: 2px solid #999;
+    border-radius: 8px;
+    resize: none;
+    min-height: 120px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.light-mode textarea:focus {
+    border: 1px solid #555;
+    border-bottom-color: #953;
+    box-shadow: 0 0 3px #47b;
+}
+
+body.light-mode footer {
+    background-color: #222e;
+    color: #999;
+}
+
+body.light-mode footer div ul{color: #666;}
+
+body.light-mode footer a{
+    color: rgb(41, 49, 116);
+    transition: color 0.25s ease;
+}
+body.light-mode footer a:hover{color: #3c0885;}
